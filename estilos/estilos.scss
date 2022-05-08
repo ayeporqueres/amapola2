@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,300&family=Smooch+Sans:wght@200;300;500&display=swap');
-
+@import "generales";
+@import "nav";
+@import "ventas";
+@import "ofertas";
+@import "nosotros";
+@import "productos";
+@import "contacto";
+@import "cuenta";
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 } 
 html {
@@ -58,7 +65,7 @@ section p {
 }
 
 .colornav{
-	background-color: rgba(204, 186, 139, 0.8);
+	background-color:rgba(204, 186, 139, 0.8) ;
 
 } 
 
@@ -82,7 +89,7 @@ section p {
 	
 } 
 
- .ventajas .textCenter1{
+.ventajas .textCenter1{
 	text-align: center;
 	margin: 70px;
 	font-size: 4rem;
@@ -113,10 +120,6 @@ section p {
 	flex: wrap;
 }
 
-
-
-
-
 .ofertas {
 
 	display: flex; 
@@ -125,7 +128,7 @@ section p {
 	height: 300px;	
 } 
 
-  .ofertas figure{
+.ofertas figure{
 	text-align: center;
 
 }
@@ -167,7 +170,6 @@ section p {
 	justify-content: center;
 	
 }
-
 .tituloproducto{
 	font-size: 25px;
 	color:rgb(138, 92, 50);
@@ -401,7 +403,7 @@ footer h2{
 	grid-area: iconos ;
 } 
 
-@media(max-width: 320px) {
+@media(max-width: 470px) {
     .contenedor{
 	 display: grid;
 	 gap: 20px;
@@ -438,7 +440,49 @@ footer h2{
 }
 
 
+@media (min-width: 1024px) {
 
+	.contenedor{
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-areas:
+		"header   header   header"
+		"carrusel carrusel carrusel"
+		"ventas   ventas  ventas"
+		"fotos    fotos    fotos"
+        "iconos   iconos   iconos"
+
+
+	}
+    .navbar-nav{
+	    font-size: 4rem;
+	    font-family: Smooch Sans;
+	    color: grey;
+	    text-decoration: beige;
+	    justify-content: end;
+    }
+}
+
+ @media (min-width: 1200px) {
+
+	.contenedor{
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-areas:
+		"header   header   header"
+		"carrusel carrusel carrusel"
+		"ventas   ventas  ventas"
+		"fotos    fotos    fotos"
+        "iconos   iconos   iconos"
+
+
+	}
+    .navbar-nav{
+	    font-size: 4rem;
+	    font-family: Smooch Sans;
+	    color: grey;
+	    text-decoration: beige;
+	    justify-content: end;
+    }
+} 
 /*pseudoclases*/
 
 a:link{

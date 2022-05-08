@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,300&family=Smooch+Sans:wght@200;300;500&display=swap');
+
+.nosotros{
+	flex: wrap;
+
+    .texto2{
+        width:50%;
+        margin-left: 500px;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    .textCenter2 {
+        text-align: center;
+        margin: 100px 10px;
+        font-size: 6rem;
+        font-family: Oswald;
+    }
+    
+    .sierras{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+}
+

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,300&family=Smooch+Sans:wght@200;300;500&display=swap');
+
+.ventajas {
+	display: grid;
+ 
+	/* Grid Areas*/
+	grid-template-areas: 
+	"bgDark"    ; /*fila 1*/
+     
+	 grid-template-columns:  1fr 1fr;
+	 grid-template-rows: 5fr;
+	
+    
+    .textCenter1{
+        text-align: center;
+        margin: 70px;
+        font-size: 4rem;
+        font-family: Oswald;
+    }  
+    
+    
+    .texto{
+        width:50%;
+        margin-left: 250px;
+        padding: 10px;
+        
+    }
+    
+    
+    .bgDark{
+        margin: 20px;
+        justify-content: right;
+        
+    }
+    .bgDark2{
+        margin: 20px;
+        justify-content: right;
+    }
+    
+ } 
+
